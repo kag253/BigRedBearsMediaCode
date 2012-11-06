@@ -1,0 +1,154 @@
+#contentPanel{
+	font-family: 'Ubuntu Condensed', Tahoma, Sans-Serif;
+}
+#centerTitle{
+	color: black;
+	font-size: 25px;
+	margin: 20px 0px 0px 420px;
+}
+#titles{
+	position: relative;
+	margin: 10px 0px 5px 205px;
+	width: 600px;
+	height: 40px;
+}
+#leftTitle, #rightTitle{
+	position: absolute;
+	top: 0px;
+	font-size: 15px;
+	color: #403F3F;
+	font-family: Sans-Serif;
+}
+
+#leftTitle{ left: 10px;}
+#rightTitle{ left: 490px;}
+#resultsList{
+	margin: 0px 0px 0px 205px;
+	width: 600px;
+	height: 500px;
+	background-color: white;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	overflow-y: scroll;
+}
+
+#listSummary{
+	position: relative;
+	margin: 0px 0px 0px 205px;
+	width: 600px;
+	height: 50px;
+	background-color: #403F3F;
+	color: white;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 0px 0px 6px 6px / 0px 0px 6px 6px;
+}
+
+#totalSuccess, #total, #totalFail{
+	position: absolute;
+	top: 4px;
+	font-size: 15px;
+}
+
+#total{ 
+	left: 40px;
+	width: 100px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+#totalSuccess{
+	width: 65px;
+	left: 448px;
+	color: #3ecd00;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+#totalFail{
+	width: 60px;
+	left: 534px;
+	color: #e92222;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+#listSummary img{
+	display: block;
+	position: absolute;
+	top: 19px;
+}
+
+#icon1{ left: 20px;}
+#icon2{ left: 430px;}
+#icon3{ left: 514px;}
+
+#navLinks{
+	position: relative;
+	margin: 30px 0px 10px 205px;
+	height: 50px;
+	width: 600px;
+
+}
+
+#addMore, #viewAlbum{
+	position: absolute;
+	top: 0px;
+	background-color: #403F3F;
+	width: 150px;
+	height: 25px;
+	padding: 7px 0px 0px 0px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+#addMore:hover, #viewAlbum:hover{
+	background-color: #cc2929;
+}
+
+#addMore{
+	left: 140px;
+	border-radius: 6px 0px 0px 6px / 6px 0px 0px 6px;
+}
+
+#viewAlbum{
+	left: 310px;
+	border-radius: 0px 6px 6px 0px / 0px 6px 6px 0px;
+}
+
+.uploads{
+	position: relative;
+	height: 40px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+.filename{
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	color: black;
+	font-size: 15px;
+}
+
+.statusFail{
+	position: absolute;
+	top: 0px;
+	left: 490px;
+	color: red;
+}
+
+.statusSucc{
+	position: absolute;
+	top: 13px;
+	left: 497px;
+}
+
+
+
+
+

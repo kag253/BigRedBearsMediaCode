@@ -1,0 +1,197 @@
+#contentPanel{
+	font-family: 'Ubuntu Condensed', Tahoma, Sans Serif;
+}
+#uploadDiv{
+	position: relative;
+	margin: 10px auto;
+	width: 1010px;
+	min-height: 100px;
+	height: auto;
+}
+#albumSelect, #photoInput{
+	position: absolute;
+	top: 0px;
+	background-color: #403F3F;
+	color: white;
+	width: 450px;
+	padding: 10px 10px;
+	border: 1px solid black;
+	border-radius: 6px 6px;
+	/*box-shadow: 3px 3px 5px #666;*/
+}
+
+#albumSelect{ 
+	left: 520px;
+	height: 300px;
+}
+#photoInput{
+	left: 20px;
+	height: 400px;
+}
+
+#photoUpload{
+	display: block;
+	width: 200px;
+}
+
+#maxSizeWarning{
+	position: absolute;
+	top: 70px;
+	left: 255px;
+	font-style: italic;
+}
+
+#albumTitle, #albumDes{
+	display: block;
+	width: 430px;
+	opacity: 1;
+}
+
+#albumDes{
+	height: 100px;
+	resize: none;
+}
+
+#albumSelect label{
+	font-size: 15px;
+	display: block;
+	margin: 15px 0px 5px 0px;
+	opacity: 1;
+}
+
+#albumSelect select{
+	width:430px;
+	opacity: 1;
+}
+
+#albumSelect h2, #photoInput h2{
+	font-size: 25px;
+}
+
+#errorBox{
+	position: absolute;
+	top: 340px;
+	left: 520px;
+	width: 470px;
+	height: 80px;
+	background-color: #403F3F;
+	border: 1px solid black;
+	color: white;
+	border-radius: 6px 6px;
+
+}
+
+#errorIcon{
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+
+#errorMsg{
+	position: absolute;
+	top: 10px;
+	left: 140px;
+	font-size: 20px;
+	color: white;
+}
+
+
+#uploadsSoFar{
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	background-color:white;
+	width: 470px;
+	height: 250px;
+	overflow-y: scroll;
+}
+
+.uploads{
+	font-family: Sans Serif;
+	position: relative;
+	width: 100%;
+	height: 26px;
+}
+
+.color1{
+	color: black;
+	background-color: white;
+}
+
+.color2{
+	color: black;
+	background-color: #c4c4c4;
+}
+
+.uploads p{
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 3px;
+	width: 400px;
+	height: 26px;
+	overflow: hidden;
+	font-size: 20px;
+	text-overflow: ellipsis;
+	
+}
+
+.uploads img{
+	display: block;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	z-index: 999;
+}
+
+#listCounter{
+	position: absolute;
+	top: 370px;
+	left: 15px;
+	width: 330px;
+	font-size: 15px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+}
+
+#clearButton{
+	position: absolute;
+	font-size: 15px;
+	top: 380px;
+	left: 370px;
+	width: 80px;
+	height: 30px;
+	background-color: #cc2929;
+	border:  #cc2929;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px 4px;
+}
+
+input.hiddenInputs{
+	display: none;
+}
+
+#submitButton{
+	position: absolute;
+	top: 500px;
+	left: 460px;
+	background-color: #403F3F;
+	color: white;
+	width: 100px;
+	height: 50px;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px 3px;
+}
+
+#submitButton:hover{
+	background-color: #cc2929;
+}
+
+
+

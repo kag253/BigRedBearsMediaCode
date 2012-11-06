@@ -1,0 +1,366 @@
+#contentPanel{
+	font-family: 'Ubuntu Condensed', Tahoma, Sans Serif;
+}
+.photoRow{
+	position: relative;
+	margin: 20px 0px 20px 0px;
+	height: 150px;
+	top: 0px;
+	left: 0px;
+}
+.thumbs{
+	text-align: center;
+	width: 150px;
+	height: 150px;
+}
+
+.thumbs img:hover{
+	cursor: pointer;
+	position: relative;
+	left: -3px;
+	-moz-box-shadow: 3px 3px 3px #888;
+	-webkit-box-shadow: 3px 3px 3px #888;
+	box-shadow: 3px 3px 3px #888;
+}
+
+.first, .second, .third, .fourth, .fifth, .sixth{
+	position: absolute;
+	top: 0px;
+}
+
+.first{ left: 0px;}
+.second{ left: 172px;}
+.third{ left: 344px;}
+.fourth{ left: 516px;}
+.fifth{ left: 688px;}
+.sixth{ left: 860px;}
+
+#zeroPhotos{
+	position: absolute;
+	top: 220px;
+	left: 355px;
+	width: 300px;
+}
+
+#zeroPhotos img{
+	margin: 0px 0px 0px 80px;
+}
+
+#zeroPhotos a{
+	margin: 0px 0px 0px 115px;
+}
+
+#fadeOut, #imagePopUp{
+	display: none;
+}
+
+#fadeOut{
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 999;
+	opacity: 0.9;
+
+}
+
+#imagePopUp{
+	position: absolute;
+	top: -165px;
+	left: 102px;
+	/*width: 840px;
+	height: 630px;*/
+	width: 0px;
+	height: 0px;
+	border: 3px solid #403F3F;
+	z-index: 1000;
+	background-color: black;
+	border-radius: 2px 2px;
+}
+
+#loadingMsg{
+	position: absolute;
+	z-index: 1002;
+	color: #403F3F;
+	top: 260px;
+	left: 370px;
+	font-size: 24px;
+}
+
+#enlargedPhoto{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: white;
+	opacity: 0.0;
+	
+}
+
+#closePicture{
+	position: absolute;
+	top: 0px;
+	left: 806px;
+	cursor: pointer;
+	z-index: 1001;
+	display: none;
+	background-color: #403F3F;
+	padding: 4px 3px 0px 3px;
+	border-left: 3px solid #403F3F;
+    border-bottom: 3px solid #403F3F;
+    border-radius: 0px 0px 0px 3px / 0px 0px 0px 3px;
+}
+
+#prevPic, #nextPic{
+	position: absolute;
+	top: 5px;
+	width: 70px;
+	height: 25px;
+	background-color: #403F3F;
+	color: white;
+	display: none;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 2px 2px;
+}
+
+#prevPic{
+	left: 335px;
+}
+
+#nextPic{
+	left: 435px;
+}
+
+#nextLabel, #prevLabel, #nextPic img, #prevPic img{
+	position: absolute;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+#nextLabel{
+	left: 14px;
+	top: 3px;
+}
+#prevLabel{
+	right: 14px;
+	top: 3px;
+}
+#nextPic img{
+	right: 5px;
+	top: 2px;
+	display: block;
+}
+#prevPic img{
+	left: 5px;
+	top: 2px;
+	display: block;
+}
+
+#imageCaption{
+	position: absolute;
+	left: 615px;
+	top: 100px;
+	width: 365px;
+}
+
+#imageDate{
+	position: absolute;
+	left: 615px;
+	top: 60px;
+}
+
+#description{
+	position: absolute;
+	left: 615px;
+	top: 200px;
+	width: 365px;
+	height: 100px;
+	resize: none;
+}
+
+#descLabel{
+	position:absolute;
+	left: 615px;
+	top: 175px;
+	font-size: 15px;
+}
+
+#editButton{
+	position:absolute;
+	left: 910px;
+	top: 50px;
+	background-color: #403F3F;
+	color: white;
+	width: 75px;
+	height: 35px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 3px 3px;
+}
+
+#dateLabel{
+	position: absolute;
+	top: 75px;
+	left: 615px;
+	font-size: 15px;
+}
+#month, #year, #day{
+	position: absolute;
+	top: 100px;
+}
+
+#month{ 
+	left: 615px;
+	height: 25px;
+}
+#day{ 
+	left: 660px;
+	height: 25px;
+}
+#year{ 
+	top: 100px;
+	left: 710px;
+	width: 50px;
+	height: 20px;
+}
+
+#cancel, #makeChanges{
+	text-align: center;
+	position:absolute;
+	top: 330px;
+	color: white;
+	width: 75px;
+	height: 35px;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px 3px;
+}
+
+#cancel{
+	background-color: #403F3F;
+	left: 800px;
+}
+
+#makeChanges{
+	left: 690px;
+	background-color: #403F3F;
+	width: 100px;
+}
+
+#delete{
+	text-align: center;
+	position: absolute;
+	top: 100px;
+	left: 840px;
+	background-color: #cc2929;
+	color: white;
+	cursor: pointer;
+	border: none;
+	width: 125px;
+	height: 25px;
+	border-radius: 3px 3px;
+}
+
+#albumTitle{
+	position: absolute;
+	top: 0px;
+	left: 600px;
+	color: white;
+	background-color: #403F3F;
+	width: 400px;
+	height: 37px;
+	
+}
+
+#albumTitle p{
+	width: 300px;
+	position: absolute;
+	top: -10px;
+	left: 3px;
+	font-size: 20px;
+}
+
+#albumInfo{
+	position: relative;
+	width: 800px;
+	padding: 3px 5px 5px 5px;
+	min-height: 107px;
+	background-color: #403F3F;
+	color: white;
+	border-radius: 3px 3px;
+}
+
+#albumInfo h3{
+	width: 800px;
+	font-size: 15px;
+	margin: 0px 0px 0px 0px;
+}
+
+#albumID{
+	position: absolute;
+	top: -10px;
+	left: 160px;
+}
+
+#albumInfo p{
+	font-family: Sans-Serif;
+
+}
+
+#editButtons{
+	
+}
+
+#editAlbum, #makeAlbumChanges, #deleteAlbum, #deleteAllPhotos, #cancelChanges{
+	text-align: center;
+	position:absolute;
+	top: 20px;
+	left: 840px;
+	color: white;
+	background-color: #403F3F;
+	width: 120px;
+	height: 35px;
+	border: none;
+	cursor: pointer;
+	border-radius: 3px 3px;
+}
+
+#deleteAllPhotos{
+	top: 100px;
+}
+
+#deleteAlbum, #cancelChanges{
+	top:60px;
+}
+
+#deleteAllPhotos:hover, #deleteAlbum:hover, #editAlbum:hover, #makeAlbumChanges:hover, #cancelChanges:hover{
+	background-color: #cc2929;
+}
+
+#descTextArea{
+	position: absolute;
+	top: 50px;
+	left: 25px;
+	height: 75px;
+	width: 795px;
+	resize: none;
+
+}
+
+#makeAlbumChanges, #descTextArea, #cancelChanges{
+	display: none;
+}
+
+#error{
+	color: red;
+}
+
+
+
+
+
+
+
